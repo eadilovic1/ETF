@@ -1,0 +1,30 @@
+﻿OPERATIVNI SISTEMI
+ZADACA 2 PRIMJERAK BROJ 1
+STUDENT: _______________________________ 
+
+Sve vrijednosti u ovom zadatku su u heksadekadnom brojnom sistemu. 
+Na Pentiumu u zaštićenom režimu registri imaju sljedeću vrijednost: 
+LDTR=06000000, GDTR=08000000, CR3=10000000, DS=14, CS=0034  CR0=80000001.
+Ako instrukcija (npr. MOV AL,[2A6C] pristupa logičkoj adresi 2A6C, 
+kojoj fizičkoj adresi ona pristupa? 
+Na kojoj adresi se nalazi deskripktor segmenta? Trenutno stanje memorije, 
+gledajući apsolutne adrese je
+........
+06000000 CD 20 FF 9F 00 9A EE FE 1D F0 4F 03 22 05 8A 03
+06000010 22 05 17 03 22 93 0D 04 01 01 01 00 02 FF FF FF
+.........
+08000000 CA 20 FF 9F 00 9A E3 FE 1D F2 4F 08 23 05 8A 07
+08000010 26 05 19 03 22 05 0D 04 01 02 01 00 02 FF FA FF
+.........
+10000020 3A 56 21 40 2A 38 42 18 2A 56 42 40 8E 48 42 18
+10000030 2A 36 42 40 9A 48 42 18 7A 56 42 20 8E 48 42 18
+10000040 23 60 42 40 4E A8 42 18 5A 56 42 40 8E 48 42 18
+.........
+40426860 C6 06 23 99 00 80 3E 1D 96 00 74 03 E9 99 00 E8
+40426870 A6 01 E8 FF 03 75 19 80 3E C4 98 00 34 00 AD 0A
+40426880 13 96 00 BA E9 89 75 03 E9 17 01 C6 06 1F 99 01
+40426890 B8 00 6C BE 08 98 BB 21
+.........
+C6011D70 C6 06 23 99 00 80 3E 1D 96 00 74 03 E9 99 00 E8
+C6011D80 A6 01 E8 FF 03 75 19 80 3E C4 98 00 34 00 AD 0A
+C6011D90 13 96 00 BA E9 89 75 03 E9 17 01 C6 06 1F 99 01
